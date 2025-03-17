@@ -1,0 +1,13 @@
+module avail
+module load nextflow
+module unload nextflow
+module list 
+
+
+nextflow -v #after loading it, test whether it is sccessfully loaded
+
+generate the file in the terminal
+code test.nf #generate or open a new file in the current path
+code /path/to/your/file.nf ##generate or open a new file in the path
+
+code . # launches VS Code with the current directory as the workspace
