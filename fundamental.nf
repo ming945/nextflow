@@ -54,3 +54,6 @@ channel operators: to transform the contents of a channel.
 
 
   In practice, naming files based on the input data itself is almost always impractical. The better way to generate dynamic filenames is to pass metadata to a process along with the input files. The metadata is typically provided via a 'sample sheet' or equivalents. You'll learn how to do that later in your Nextflow training.
+
+tipps:
+checking whether the new scripts do the same thing as the old one, use -resume option.just as in the module saction
