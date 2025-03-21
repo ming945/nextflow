@@ -1,0 +1,24 @@
+Run the workflow to generate a resource utilization report
+nextflow run hello-config.nf -with-report report-config-1.html
+
+
+  for parameters
+specify parameters via a parameter file in JSON format
+test-params.json
+
+{
+  "greeting": "greetings.csv",
+  "batch": "Trio",
+  "character": "turkey"
+}
+
+nextflow run hello-config.nf -params-file test-params.json
+
+
+  Create profiles for switching between local development and execution on HPC
+nextflow run hello-config.nf -profile my_laptop
+
+
+Let's try adding the test profile to our previous command:0
+nextflow run hello-config.nf -profile my_laptop,test
+  This means that as long as we distribute any test data files with the workflow code, anyone can quickly try out the workflow without having to supply their own inputs via the command line or a parameter file.
